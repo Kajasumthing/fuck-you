@@ -1,0 +1,109 @@
+/* Achtergrondafbeelding die mee beweegt met muis */
+.project-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -2;
+    transition: background-position 0.2s ease;
+}
+
+/* Dimming overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+/* Scrollbare hoofdcontainer */
+.project-wrapper {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+/* Inhoudscontainer */
+.project-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 100px 20px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titel */
+.project-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.project-title:hover {
+    transform: scale(1.05);
+    color: #ffd700;
+}
+
+/* Centraal contentblok */
+.project-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 40px;
+    color: #ffffff;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Links/rechts contentblokken (voor eventueel gebruik) */
+.project-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px 40px;
+    color: #ffffff;
+    max-width: 800px;
+    border-left: 4px solid #ffd700;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.project-content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px 40px;
+    color: #ffffff;
+    max-width: 800px;
+    border-right: 4px solid #ffd700;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* GIF styling */
+.project-gif {
+    margin-top: 20px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,44 @@
+/* src/components/Navbar.css */
+.navbar {
+    height: 60px; /* kleiner dan typische 80px */
+    padding: 0 20px;
+    background-color: rgb(40, 40, 60);
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: space-between;
+    position: fixed; /* zorgt dat hij blijft hangen */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-subtext {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #aaaaaa;
+    margin-left: 0.5rem;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
